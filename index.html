@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Ayaan's Library
+        </div>
+        <div id="library">
+            
+        </div>
+        <button id="addBookbtn" title="Add new book">+</button>
+        <div class="modal">
+            <button class="closemodal">x</button>
+            <div class="formdiv">
+                <form id="formFull">
+                    <fieldset>
+                        <legend>Book</legend>
+                    
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" placeholder="The Great Gatsby" required>
+                    
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" placeholder="F. Scott Fitzgerald" required>
+                    
+                        <label for="pages">Pages:</label>
+                        <input type="number" id="pages" name="pages" placeholder="208">
+            
+                        <label for="read">Completed:</label>
+                        <input type="checkbox" id="read" name="read">
+                        <button id="submit">Submit</button>
+                    
+                    </fieldset> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
