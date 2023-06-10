@@ -121,27 +121,7 @@ body{
 		text-align: center;
 	}
     
-	.book:after{
-		content: '';
-		position: absolute;
-		height: 40px;
-		width: 1px;
-		margin-left: -1px;
-		background: #b8cbdb;
-		border-right: 1px solid #315c83;
-		margin-top: 40px;
-	}
 	
-	.book:before{
-		content: '';
-		position: absolute;
-		height: 40px;
-		width: 1px;
-		margin-left: -1px;
-		background: #b8cbdb;
-		border-right: 1px solid #315c83;
-		margin-top: 145px;
-	}
 	input[type="checkbox"].switch_1{
 		font-size: 20px;
 		-webkit-appearance: none;

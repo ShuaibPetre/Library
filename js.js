@@ -1,11 +1,14 @@
 //ARRAY
 let myLibrary = []
-function Book(title, author, pages, completed) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.completed = completed
-    }
+class Book {
+    constructor(title, author, pages, completed) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.completed = completed
+        }
+}
+
 //ADD BOOK TO ARRAY    
 function addbooktolibrary (title, author, pages, completed){  
 const book = new Book(title, author, pages, completed);
@@ -65,8 +68,9 @@ library.replaceChildren()
         deletebtn.textContent = 'Remove';
         deletebtn.addEventListener("click", deleteBook);
         bookdiv.appendChild(deletebtn);
-        //checkbg(checkbox.checked)
+        checkbg()
     }
+
 }
 //FORM SUBMISSION
 function submitform() {
@@ -94,6 +98,7 @@ function submitform() {
 function changebg(event){
     let btn = event.currentTarget
     fieldform = btn.parentNode
+
     if (event.target.checked === false) {
         fieldform.style.background = 'linear-gradient(135deg, #e3e3e3, #5d6874)'
         const collection = fieldform.getElementsByClassName("changecolor");
@@ -115,6 +120,7 @@ function changebg(event){
 function checkbg() {
     element = document.querySelector('#library');
     child = element.lastElementChild;
+    console.log(child)
     check = child.querySelector('.switch_1');
     if (check.value === 'false') {
         child.style.background = 'linear-gradient(135deg, #e3e3e3, #5d6874)'
